@@ -1,0 +1,599 @@
+{
+  "description": "Resumo numérico das campanhas, sem linhas dos dados oficiais, caminhos privados, logs brutos ou conteúdo integral de entradas e saídas",
+  "newBenchmark": false,
+  "campaigns": {
+    "R4": {
+      "label": "B0 versus B1: repetição completa R4, anterior a H1",
+      "environment": {
+        "node": "v24.11.1",
+        "v8": "13.6.233.10-node.28",
+        "cpu": "AMD Ryzen 7 5800H with Radeon Graphics",
+        "platform": "win32"
+      },
+      "metric": "Tempo interno totalMs de processDataset, sem a inicialização completa da CLI; passagens sequenciais no mesmo processo",
+      "cache": "Cache do sistema operacional não controlado; aquecimento por dataset e variante",
+      "perDataset": [
+        {
+          "dataset": 1,
+          "A": {
+            "n": 5,
+            "meanMs": 28.704979999999342,
+            "medianMs": 27.021999999997206,
+            "stddevPopulationMs": 5.736378444768167,
+            "minMs": 22.73949999999968,
+            "maxMs": 37.800999999999476
+          },
+          "B0": {
+            "n": 5,
+            "meanMs": 22.970040000008886,
+            "medianMs": 22.29210000007879,
+            "stddevPopulationMs": 3.5339461617581063,
+            "minMs": 17.071800000034273,
+            "maxMs": 27.040600000007544
+          },
+          "B1": {
+            "n": 5,
+            "meanMs": 26.02377999998862,
+            "medianMs": 25.976000000024214,
+            "stddevPopulationMs": 5.842917345762147,
+            "minMs": 17.31030000001192,
+            "maxMs": 35.711199999961536
+          }
+        },
+        {
+          "dataset": 2,
+          "A": {
+            "n": 5,
+            "meanMs": 114.76798000000198,
+            "medianMs": 114.94030000000203,
+            "stddevPopulationMs": 2.827051437381759,
+            "minMs": 111.30230000000302,
+            "maxMs": 118.40890000000218
+          },
+          "B0": {
+            "n": 5,
+            "meanMs": 102.21393999997527,
+            "medianMs": 98.1535000000149,
+            "stddevPopulationMs": 22.705608775012198,
+            "minMs": 72.51039999979548,
+            "maxMs": 138.62549999996554
+          },
+          "B1": {
+            "n": 5,
+            "meanMs": 108.14030000000494,
+            "medianMs": 102.82170000008773,
+            "stddevPopulationMs": 18.89999020816629,
+            "minMs": 86.19669999997132,
+            "maxMs": 143.1995000000461
+          }
+        },
+        {
+          "dataset": 3,
+          "A": {
+            "n": 1,
+            "meanMs": 465.4406000000017,
+            "medianMs": 465.4406000000017,
+            "stddevPopulationMs": 0,
+            "minMs": 465.4406000000017,
+            "maxMs": 465.4406000000017
+          },
+          "B0": {
+            "n": 5,
+            "meanMs": 411.83377999999794,
+            "medianMs": 409.8084999999264,
+            "stddevPopulationMs": 84.29853104051698,
+            "minMs": 285.07150000007823,
+            "maxMs": 507.468499999959
+          },
+          "B1": {
+            "n": 5,
+            "meanMs": 409.77755999997026,
+            "medianMs": 442.82829999993555,
+            "stddevPopulationMs": 70.4236040487645,
+            "minMs": 285.1299000000581,
+            "maxMs": 488.09289999998873
+          }
+        },
+        {
+          "dataset": 4,
+          "A": {
+            "n": 1,
+            "meanMs": 2092.6903999999995,
+            "medianMs": 2092.6903999999995,
+            "stddevPopulationMs": 0,
+            "minMs": 2092.6903999999995,
+            "maxMs": 2092.6903999999995
+          },
+          "B0": {
+            "n": 5,
+            "meanMs": 1634.4338599999435,
+            "medianMs": 1680.5051999998977,
+            "stddevPopulationMs": 312.28018855877673,
+            "minMs": 1186.6350999998394,
+            "maxMs": 2108.7382000000216
+          },
+          "B1": {
+            "n": 5,
+            "meanMs": 1558.9129399999977,
+            "medianMs": 1680.7404000000097,
+            "stddevPopulationMs": 335.2670228252269,
+            "minMs": 1118.65559999994,
+            "maxMs": 2024.501600000076
+          }
+        },
+        {
+          "dataset": 5,
+          "A": {
+            "n": 1,
+            "meanMs": 6106.228799999997,
+            "medianMs": 6106.228799999997,
+            "stddevPopulationMs": 0,
+            "minMs": 6106.228799999997,
+            "maxMs": 6106.228799999997
+          },
+          "B0": {
+            "n": 5,
+            "meanMs": 4611.881580000045,
+            "medianMs": 4669.220199999982,
+            "stddevPopulationMs": 889.4827691913588,
+            "minMs": 3022.1692000001203,
+            "maxMs": 5572.290000000037
+          },
+          "B1": {
+            "n": 5,
+            "meanMs": 4174.465820000007,
+            "medianMs": 4293.228199999954,
+            "stddevPopulationMs": 797.0074648992455,
+            "minMs": 2769.3688000000548,
+            "maxMs": 5136.315300000017
+          }
+        },
+        {
+          "dataset": 6,
+          "A": {
+            "n": 1,
+            "meanMs": 55751.97980000001,
+            "medianMs": 55751.97980000001,
+            "stddevPopulationMs": 0,
+            "minMs": 55751.97980000001,
+            "maxMs": 55751.97980000001
+          },
+          "B0": {
+            "n": 5,
+            "meanMs": 36778.43107999999,
+            "medianMs": 38566.71479999996,
+            "stddevPopulationMs": 4432.054472598114,
+            "minMs": 27990.38280000002,
+            "maxMs": 40029.41969999997
+          },
+          "B1": {
+            "n": 5,
+            "meanMs": 35673.92975999999,
+            "medianMs": 36987.754500000156,
+            "stddevPopulationMs": 2847.645003816345,
+            "minMs": 30959.169899999863,
+            "maxMs": 38338.74849999999
+          }
+        },
+        {
+          "dataset": 7,
+          "A": {
+            "n": 1,
+            "meanMs": 102935.12620000001,
+            "medianMs": 102935.12620000001,
+            "stddevPopulationMs": 0,
+            "minMs": 102935.12620000001,
+            "maxMs": 102935.12620000001
+          },
+          "B0": {
+            "n": 5,
+            "meanMs": 56555.40128000001,
+            "medianMs": 54101.164800000144,
+            "stddevPopulationMs": 8350.591449204449,
+            "minMs": 43835.57529999991,
+            "maxMs": 65875.88190000004
+          },
+          "B1": {
+            "n": 5,
+            "meanMs": 49658.46499999995,
+            "medianMs": 46443.014599999995,
+            "stddevPopulationMs": 7385.62245287164,
+            "minMs": 39479.833799999906,
+            "maxMs": 59826.75709999999
+          }
+        }
+      ],
+      "sumMeansMs": {
+        "A": 167494.93876000002,
+        "B0": 100117.16555999996,
+        "B1": 91609.7151599999
+      },
+      "relativeReductionPercent": 8.497494263260542,
+      "pairedRounds": [
+        {
+          "round": 0,
+          "B0": 112770.21600000001,
+          "B1": 104861.82059999992
+        },
+        {
+          "round": 1,
+          "B0": 112533.43879999989,
+          "B1": 101735.92579999997
+        },
+        {
+          "round": 2,
+          "B0": 99096.18280000007,
+          "B1": 86098.09319999989
+        },
+        {
+          "round": 3,
+          "B0": 89510.98459999985,
+          "B1": 83855.35650000011
+        },
+        {
+          "round": 4,
+          "B0": 86675.00560000003,
+          "B1": 81497.3796999997
+        }
+      ],
+      "notes": [
+        "B0/B1: n = 5 por dataset; A: n = 5 apenas em 1–2, n = 1 em 3–7",
+        "Uma campanha anterior afetada por interrupções e suspensões foi preservada, sem combinar suas amostras com esta repetição completa",
+        "Há variação temporal dos tempos e dispersão; estatísticas descritivas de uma versão anterior a H1"
+      ]
+    },
+    "R5": {
+      "label": "B1 sem H1 versus B1 com H1: otimização da validação temporal",
+      "environment": {
+        "node": "v24.11.1",
+        "v8": "13.6.233.10-node.28",
+        "cpu": "AMD Ryzen 7 5800H with Radeon Graphics",
+        "platform": "win32"
+      },
+      "metric": "Métrica primária: totalMs interno de processDataset; outerMs inclui separadamente inicialização, imports, processo de trabalho, limpeza e encerramento; conferência do resultado fora de ambos os intervalos",
+      "method": "Novo processo Node por versão, dataset e passagem; seis repetições emparelhadas; um aquecimento excluído por versão e dataset; três primeiras posições para cada versão; ordem fixa dos datasets de 1 a 7",
+      "perDataset": [
+        {
+          "dataset": 1,
+          "baseline": {
+            "internal": {
+              "n": 6,
+              "meanMs": 34.2276,
+              "medianMs": 32.169799999999995,
+              "stddevPopulationMs": 4.397175138654359,
+              "minMs": 30.5101,
+              "maxMs": 43.564499999999995
+            },
+            "external": {
+              "n": 6,
+              "meanMs": 138.50131666668798,
+              "medianMs": 139.26810000000842,
+              "stddevPopulationMs": 9.529088209865076,
+              "minMs": 126.59320000000298,
+              "maxMs": 152.09620000002906
+            }
+          },
+          "candidate": {
+            "internal": {
+              "n": 6,
+              "meanMs": 29.067249999999998,
+              "medianMs": 28.76535,
+              "stddevPopulationMs": 1.667860654401319,
+              "minMs": 26.6518,
+              "maxMs": 31.917499999999997
+            },
+            "external": {
+              "n": 6,
+              "meanMs": 131.27399999999275,
+              "medianMs": 130.11475000000792,
+              "stddevPopulationMs": 6.570857333459707,
+              "minMs": 121.73259999998845,
+              "maxMs": 140.42419999999402
+            }
+          }
+        },
+        {
+          "dataset": 2,
+          "baseline": {
+            "internal": {
+              "n": 6,
+              "meanMs": 107.45076666666665,
+              "medianMs": 104.3062,
+              "stddevPopulationMs": 10.255105644127815,
+              "minMs": 96.87769999999999,
+              "maxMs": 121.26599999999999
+            },
+            "external": {
+              "n": 6,
+              "meanMs": 213.68253333331813,
+              "medianMs": 208.9242000000013,
+              "stddevPopulationMs": 20.441801599769924,
+              "minMs": 193.12020000000484,
+              "maxMs": 245.09159999992698
+            }
+          },
+          "candidate": {
+            "internal": {
+              "n": 6,
+              "meanMs": 84.76841666666667,
+              "medianMs": 83.65655000000001,
+              "stddevPopulationMs": 3.994452694849305,
+              "minMs": 79.6406,
+              "maxMs": 91.63929999999999
+            },
+            "external": {
+              "n": 6,
+              "meanMs": 187.0440833333123,
+              "medianMs": 185.31224999998813,
+              "stddevPopulationMs": 8.124660567143719,
+              "minMs": 177.131699999969,
+              "maxMs": 200.94539999996778
+            }
+          }
+        },
+        {
+          "dataset": 3,
+          "baseline": {
+            "internal": {
+              "n": 6,
+              "meanMs": 347.4662333333334,
+              "medianMs": 342.7101,
+              "stddevPopulationMs": 14.764624474925043,
+              "minMs": 336.126,
+              "maxMs": 379.1567
+            },
+            "external": {
+              "n": 6,
+              "meanMs": 451.1224333333351,
+              "medianMs": 445.27954999998474,
+              "stddevPopulationMs": 19.52789355184994,
+              "minMs": 434.26230000000214,
+              "maxMs": 493.3974000000162
+            }
+          },
+          "candidate": {
+            "internal": {
+              "n": 6,
+              "meanMs": 279.98705,
+              "medianMs": 283.4316,
+              "stddevPopulationMs": 14.859891362854341,
+              "minMs": 255.6841,
+              "maxMs": 295.14009999999996
+            },
+            "external": {
+              "n": 6,
+              "meanMs": 392.0190499999929,
+              "medianMs": 386.55314999999246,
+              "stddevPopulationMs": 25.340601614836213,
+              "minMs": 360.125400000019,
+              "maxMs": 427.71809999999823
+            }
+          }
+        },
+        {
+          "dataset": 4,
+          "baseline": {
+            "internal": {
+              "n": 6,
+              "meanMs": 1288.3809166666667,
+              "medianMs": 1265.14615,
+              "stddevPopulationMs": 77.98233736982624,
+              "minMs": 1226.8666,
+              "maxMs": 1459.3652000000002
+            },
+            "external": {
+              "n": 6,
+              "meanMs": 1397.5865333333277,
+              "medianMs": 1370.1718499999988,
+              "stddevPopulationMs": 83.99626197769373,
+              "minMs": 1329.1295999999857,
+              "maxMs": 1581.4825999999885
+            }
+          },
+          "candidate": {
+            "internal": {
+              "n": 6,
+              "meanMs": 943.6167666666666,
+              "medianMs": 936.2243,
+              "stddevPopulationMs": 27.85952845608765,
+              "minMs": 905.8466,
+              "maxMs": 990.2091
+            },
+            "external": {
+              "n": 6,
+              "meanMs": 1049.5011999999915,
+              "medianMs": 1045.5558499999752,
+              "stddevPopulationMs": 28.87310882222179,
+              "minMs": 1005.5039000000106,
+              "maxMs": 1094.6310999999987
+            }
+          }
+        },
+        {
+          "dataset": 5,
+          "baseline": {
+            "internal": {
+              "n": 6,
+              "meanMs": 3192.729666666666,
+              "medianMs": 2966.0292,
+              "stddevPopulationMs": 542.364596342118,
+              "minMs": 2850.8077999999996,
+              "maxMs": 4394.112099999999
+            },
+            "external": {
+              "n": 6,
+              "meanMs": 3308.763066666647,
+              "medianMs": 3086.1138999999966,
+              "stddevPopulationMs": 546.1517705637316,
+              "minMs": 2962.8205999999773,
+              "maxMs": 4517.771199999959
+            }
+          },
+          "candidate": {
+            "internal": {
+              "n": 6,
+              "meanMs": 2600.2451,
+              "medianMs": 2304.3505999999998,
+              "stddevPopulationMs": 709.36048954435,
+              "minMs": 2202.9795,
+              "maxMs": 4183.3803
+            },
+            "external": {
+              "n": 6,
+              "meanMs": 2711.9708833333184,
+              "medianMs": 2410.888449999955,
+              "stddevPopulationMs": 723.3408327014622,
+              "minMs": 2304.4837000000116,
+              "maxMs": 4326.118099999963
+            }
+          }
+        },
+        {
+          "dataset": 6,
+          "baseline": {
+            "internal": {
+              "n": 6,
+              "meanMs": 25059.241866666667,
+              "medianMs": 24665.2693,
+              "stddevPopulationMs": 1176.8823006908924,
+              "minMs": 23533.7216,
+              "maxMs": 27319.6584
+            },
+            "external": {
+              "n": 6,
+              "meanMs": 25180.46056666666,
+              "medianMs": 24787.25995000002,
+              "stddevPopulationMs": 1178.2914682024782,
+              "minMs": 23651.5615999999,
+              "maxMs": 27440.695799999987
+            }
+          },
+          "candidate": {
+            "internal": {
+              "n": 6,
+              "meanMs": 19002.073650000002,
+              "medianMs": 18638.964500000002,
+              "stddevPopulationMs": 1165.3316259778455,
+              "minMs": 17384.8864,
+              "maxMs": 20885.7191
+            },
+            "external": {
+              "n": 6,
+              "meanMs": 19119.296933333342,
+              "medianMs": 18752.922499999986,
+              "stddevPopulationMs": 1168.0398962485356,
+              "minMs": 17499.604399999953,
+              "maxMs": 20997.951100000064
+            }
+          }
+        },
+        {
+          "dataset": 7,
+          "baseline": {
+            "internal": {
+              "n": 6,
+              "meanMs": 37125.52913333334,
+              "medianMs": 36667.90075,
+              "stddevPopulationMs": 998.0070928436486,
+              "minMs": 36205.767499999994,
+              "maxMs": 39077.544799999996
+            },
+            "external": {
+              "n": 6,
+              "meanMs": 37251.67518333335,
+              "medianMs": 36799.30245,
+              "stddevPopulationMs": 998.2919280576044,
+              "minMs": 36331.41009999998,
+              "maxMs": 39198.5098
+            }
+          },
+          "candidate": {
+            "internal": {
+              "n": 6,
+              "meanMs": 28274.5049,
+              "medianMs": 28214.16605,
+              "stddevPopulationMs": 1017.9987393609117,
+              "minMs": 26603.6679,
+              "maxMs": 29475.6394
+            },
+            "external": {
+              "n": 6,
+              "meanMs": 28393.588366666674,
+              "medianMs": 28329.974800000025,
+              "stddevPopulationMs": 1018.6702273490289,
+              "minMs": 26721.417799999996,
+              "maxMs": 29593.718500000017
+            }
+          }
+        }
+      ],
+      "sumInternalMeansMs": {
+        "baseline": 67155.02618333334,
+        "candidate": 51214.263133333334
+      },
+      "relativeReductionPercent": 23.73725982398055,
+      "pairedRounds": [
+        {
+          "round": 0,
+          "baseline": 66157.30290000001,
+          "candidate": 51701.5797
+        },
+        {
+          "round": 1,
+          "baseline": 68530.69039999999,
+          "candidate": 49986.035500000005
+        },
+        {
+          "round": 2,
+          "baseline": 65563.5559,
+          "candidate": 48525.9319
+        },
+        {
+          "round": 3,
+          "baseline": 66410.36869999999,
+          "candidate": 49665.1843
+        },
+        {
+          "round": 4,
+          "baseline": 66074.6352,
+          "candidate": 52273.3644
+        },
+        {
+          "round": 5,
+          "baseline": 70193.60399999999,
+          "candidate": 55133.483
+        }
+      ],
+      "notes": [
+        "84 passagens medidas + 14 aquecimentos; os 42/42 pares internos e os 6/6 totais tiveram menor tempo com H1 nesta campanha",
+        "Não é benchmark de --all; o aquecimento beneficia o cache do sistema operacional, não o JIT dos processos novos seguintes",
+        "Sem garantia de ganho universal ou independência estatística; efeitos de posição e variação temporal descritos na documentação"
+      ]
+    }
+  },
+  "functionalOnly": {
+    "R6": "Geração funcional com --all; não é benchmark",
+    "R9": "Instalação limpa e build; 74 testes sem dados externos, depois 85 com dados de referência locais; sete JSONs regenerados; não é benchmark"
+  },
+  "H3": {
+    "status": "CANDIDATA_ESPECIFICA_REJEITADA",
+    "speedBenchmark": "NAO_INICIADO",
+    "differential42Outputs": "NAO_INICIADO",
+    "heapDiagnostic": {
+      "groupRecords": [
+        2,
+        16
+      ],
+      "freshLineChars": 131136,
+      "baselineIncreaseBytes": [
+        370496,
+        434672
+      ],
+      "candidateIncreaseBytes": [
+        613312,
+        2522104
+      ]
+    },
+    "scope": "Observações finitas de heap retido em cenários sintéticos, não de velocidade de processamento; ensaios com mais grupos já consumidos e linhas/grupos pequenos passaram, sem refutar o efeito combinado de largura da linha e tamanho do grupo; L_max conta a soma das quantidades de restrições dos registros normalizados do grupo após deduplicação, não os tokens brutos descartados da entrada"
+  }
+}

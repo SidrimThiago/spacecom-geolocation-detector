@@ -1,0 +1,43 @@
+name: Testes sintéticos sem dados oficiais
+
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  synthetic:
+    runs-on: windows-latest
+    timeout-minutes: 10
+    steps:
+      - name: Checkout sem persistir credenciais
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - name: Node fixado
+        uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1 # v7.1.0
+        with:
+          node-version: '24.11.1'
+      - name: Instalar dependências de desenvolvimento
+        run: npm ci --include=dev --no-audit --no-fund
+      - name: Compilar
+        run: npm run build
+      - name: Typecheck
+        run: npm run typecheck
+      - name: Subconjunto sem datasets ou gabaritos privados
+        run: >-
+          node --test --test-reporter=tap
+          dist/tests/benchmark.test.js dist/tests/detect.test.js dist/tests/domain.test.js
+          dist/tests/io-memory.test.js dist/tests/io.test.js dist/tests/parser.test.js
+          dist/tests/rodada04-adversarial.test.js dist/tests/rodada05-h1.test.js dist/tests/verify.test.js
+      - name: Executar exemplo sintético
+        run: node dist/src/cli.js --input examples/encontros.txt --run-id ci-sintetico
+      - name: Verificar origem e formato do exemplo
+        run: node dist/scripts/verify.js OutPuts/gerados/ci-sintetico
+      - name: Conferir payload completo contra o esperado sintético
+        run: >-
+          node --input-type=module -e 'import fs from "node:fs"; import assert from "node:assert/strict";
+          assert.deepEqual(JSON.parse(fs.readFileSync("OutPuts/gerados/ci-sintetico/1-encontros.json", "utf8")),
+          JSON.parse(fs.readFileSync("examples/encontros.expected.json", "utf8")));'

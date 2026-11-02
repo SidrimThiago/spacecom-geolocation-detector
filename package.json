@@ -1,0 +1,22 @@
+{
+  "name": "spacecom-2027",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=24.11.1"
+  },
+  "scripts": {
+    "build": "tsc",
+    "typecheck": "tsc --noEmit",
+    "test": "npm run build && node --test --test-reporter=tap dist/tests/*.test.js",
+    "start": "node dist/src/cli.js",
+    "generate": "npm run build && node dist/src/cli.js --all",
+    "verify": "npm run build && node dist/scripts/verify.js",
+    "bench": "npm run build && node dist/scripts/benchmark.js"
+  },
+  "devDependencies": {
+    "@types/node": "24.19.2",
+    "typescript": "5.9.3"
+  }
+}

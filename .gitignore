@@ -1,0 +1,45 @@
+# Dependências e compilação locais
+node_modules/
+dist/
+.test-tmp/
+coverage/
+.nyc_output/
+
+# Inputs, oráculos e resultados oficiais/derivados não selecionados para publicação
+/DataSets/*
+!/DataSets/README.md
+/OutPuts/*
+!/OutPuts/README.md
+!/OutPuts/gerados/
+/OutPuts/gerados/*
+!/OutPuts/gerados/LEIA-ME.md
+/Resultados/
+
+# Históricos/evidências/áreas operacionais privadas
+/Relatorios/
+/evidence/
+/control/
+/snapshot/
+/tmp/
+/npm-cache/
+/.ai-memory*
+/.superpowers/
+/.claude/
+/.opencode/
+
+# Credenciais e dados locais
+.env
+.env.*
+.npmrc
+*.pem
+*.key
+*.pfx
+*.p12
+*.log
+*.cpuprofile
+*.heapprofile
+*.heapsnapshot
+*.zip
+*.7z
+.DS_Store
+Thumbs.db
